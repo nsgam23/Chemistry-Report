@@ -3,47 +3,124 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Download File - Cement & Paper</title>
+    <title>My Notes</title>
     <style>
         body {
-            background-color: #000;
-            color: aqua;
             font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #000000;
+            color: aqua;
+        }
+        header {
+            background: #000000;
+            color: #fff;
+            padding: 15px;
             text-align: center;
-            padding: 20px;
+            font-size: 24px;
+        }
+        nav {
+            background: #000000;
+            padding: 10px;
+            text-align: center;
+        }
+        nav a {
+            color: #000000;
+            text-decoration: none;
+            margin: 0 15px;
+            font-size: 18px;
         }
         .container {
-            max-width: 800px;
-            margin: auto;
+            width: 80%;
+            margin: 20px auto;
+            background: #000000;
             padding: 20px;
-            border: 1px solid aqua;
-            border-radius: 10px;
+            border-radius: 8px;
+            box-shadow: aqua;
         }
-        h1 {
-            font-size: 2em;
+        .search-bar {
+            margin-bottom: 20px;
+            text-align: center;
         }
-        p {
-            font-size: 1.2em;
-        }
-        .download-btn {
-            display: inline-block;
-            margin-top: 20px;
-            padding: 10px 20px;
-            font-size: 1.2em;
-            background-color: aqua;
-            color: black;
-            text-decoration: none;
+        .search-bar input {
+            width: 50%;
+            padding: 10px;
+            font-size: 16px;
+            border: 1px solid #000000;
             border-radius: 5px;
         }
-        .download-btn:hover {
-            background-color: #00cccc;
+        h2 {
+            color: aqua;
+        }
+        .download-btn{
+            padding: 20px 20px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-left: auto;
+            margin-right: auto;
+            background-color: aqua;
+            color: #000000;
         }
     </style>
 </head>
 <body>
-    <div class="container">
-        <h1>Welcome to Cement & Paper Info</h1>
-        <p>Cement is a crucial binding material used in construction, while paper is an essential product made from wood pulp or recycled fibers. Both have significant roles in modern industries.</p>
+    <header>My Notes</header>
+    <nav>
+        <a href="#cement">Cement</a>
+        <a href="#paper">Paper</a>
+        <a href="#other">Other Subjects</a>
+    </nav>
+    <div class="search-bar">
+        <input type="text" placeholder="Search notes...">
+    </div>
+    <div class="container" id="cement">
+        <h2>Notes on Cement</h2>
+        <p><strong>Definition:</strong> Cement is a fine powder that acts as a binder in construction. It hardens when mixed with water and is widely used in concrete production.</p>
+        <p><strong>Types of Cement:</strong>
+            <ul>
+                <li>Ordinary Portland Cement (OPC): Most commonly used for general construction.</li>
+                <li>Portland Pozzolana Cement (PPC): Used in marine structures and mass concreting.</li>
+                <li>Rapid Hardening Cement: Gains strength quickly, used in repair works.</li>
+                <li>White Cement: Used for decorative purposes and tile grouting.</li>
+            </ul>
+        </p>
+        <p><strong>Manufacturing Process:</strong>
+            <ol>
+                <li><strong>Raw Material Extraction:</strong> Limestone, clay, and other materials are quarried.</li>
+                <li><strong>Mixing & Grinding:</strong> The materials are crushed and blended to form a raw mix.</li>
+                <li><strong>Heating:</strong> The mixture is heated in a rotary kiln at high temperatures.</li>
+                <li><strong>Clinker Formation:</strong> The heated mix forms clinker, which is ground into fine powder.</li>
+                <li><strong>Packing & Distribution:</strong> The final product is packed and distributed.</li>
+            </ol>
+        </p>
+        <p><strong>Uses of Cement:</strong> Cement is used in the construction of buildings, bridges, roads, and as a component of mortar and concrete. It is also used in precast structures, sewage pipes, and even artistic sculptures.</p>
+    </div>
+    <div class="container" id="paper">
+        <h2>Notes on Paper</h2>
+        <p><strong>Definition:</strong> Paper is a thin sheet material made from cellulose fibers derived from wood, rags, or grasses, used mainly for writing, printing, and packaging.</p>
+        <p><strong>Types of Paper:</strong>
+            <ul>
+                <li>Bond Paper: High-quality paper used for documents and printing.</li>
+                <li>Newsprint: Used in newspapers due to its low cost.</li>
+                <li>Cardboard: A thick and strong form used in packaging.</li>
+                <li>Recycled Paper: Made from reused paper products.</li>
+            </ul>
+        </p>
+        <p><strong>Paper Manufacturing Process:</strong>
+            <ol>
+                <li><strong>Raw Material Collection:</strong> Wood logs, recycled paper, or other cellulose sources are collected.</li>
+                <li><strong>Pulping:</strong> The raw materials are broken down into a fibrous pulp using chemicals and mechanical processes.</li>
+                <li><strong>Bleaching:</strong> The pulp is treated to remove unwanted colors.</li>
+                <li><strong>Drying & Pressing:</strong> The wet pulp is pressed into sheets and dried.</li>
+                <li><strong>Cutting & Packaging:</strong> The final paper sheets are cut into sizes and packed.</li>
+            </ol>
+        </p>
+        <p><strong>Uses of Paper:</strong> Paper is used in books, newspapers, packaging, office work, and art applications. It is also used for hygiene products such as tissues and paper towels.</p>
+    </div>
+    <div class="container" id="other">
+        <h2>Other Subjects</h2>
+        <p>More notes on other subjects will be available soon!</p>
         <a href="Chemistry.pdf" class="download-btn" download>Download File</a>
     </div>
 </body>
